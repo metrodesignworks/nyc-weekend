@@ -1,0 +1,15 @@
+{
+  "name": "NYC Weekend 2.0",
+  "short_name": "NYC Weekend",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0d1118",
+  "theme_color": "#111827",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "512x512",
+      "type": "image/svg+xml"
+    }
+  ]
+}
