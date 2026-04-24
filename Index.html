@@ -1,0 +1,394 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>NYC Weekend 2.0</title>
+<style>
+:root{--bg:#0f1115;--card:#1b1f29;--text:#f7f7fb;--muted:#aab1c2;--line:#303746;--accent:#b77cff;--blue:#78bdff;--green:#7cf0a5}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(#121826,#0f1115);color:var(--text);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.app{max-width:560px;margin:0 auto;padding:env(safe-area-inset-top) 16px 40px}
+header{position:sticky;top:0;z-index:2;background:rgba(15,17,21,.94);backdrop-filter:blur(14px);padding:18px 0 12px;border-bottom:1px solid rgba(255,255,255,.06)}
+h1{margin:0;font-size:30px;letter-spacing:-.04em}.sub{color:var(--muted);font-size:14px;margin-top:4px}
+nav{display:flex;gap:8px;overflow:auto;padding-top:14px}nav a{color:#100b16;background:var(--accent);text-decoration:none;border-radius:999px;padding:9px 12px;font-weight:800;white-space:nowrap;font-size:13px}
+.day{padding:18px 0 8px}h2{font-size:24px;margin:0 0 6px;letter-spacing:-.03em}.summary{color:var(--muted);line-height:1.35;margin:0 0 12px}
+.card{display:grid;grid-template-columns:34px 1fr;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:14px;margin:10px 0;box-shadow:0 8px 20px rgba(0,0,0,.18)}
+.checkline input{display:none}.checkline span{display:block;width:30px;height:30px;border:2px solid #586174;border-radius:50%;margin-top:2px}
+.checkline input:checked + span{background:var(--green);border-color:var(--green)}.checkline input:checked + span:after{content:"✓";display:grid;place-items:center;height:100%;color:#082111;font-weight:900}
+.time{color:var(--accent);font-weight:900;font-size:12px;text-transform:uppercase;letter-spacing:.05em}h3{font-size:18px;margin:2px 0 6px;letter-spacing:-.02em}.type{display:inline-block;border:1px solid #3a4354;background:#262c38;border-radius:999px;padding:3px 8px;font-size:12px;color:#e7ebf3}
+.card p{color:var(--muted);font-size:14px;line-height:1.35;margin:9px 0 12px}.mapbtn{display:inline-block;background:var(--blue);color:#071421;text-decoration:none;border-radius:12px;padding:10px 12px;font-weight:900;font-size:14px}
+.tip{background:rgba(255,255,255,.05);border:1px solid var(--line);border-radius:18px;padding:13px;margin-top:14px;color:var(--muted);font-size:14px;line-height:1.35}
+</style>
+</head>
+<body>
+<div class="app">
+<header>
+<h1>NYC Weekend 2.0</h1>
+<div class="sub">Tap-through itinerary · Apple Maps buttons · checkbox progress</div>
+<nav><a href="#Saturday">Saturday</a><a href="#Sunday-A-—-Downtown-Flow">Sunday A — Downtown Flow</a><a href="#Sunday-B-—-Upper-West-Side-Alt">Sunday B — Upper West Side Alt</a><a href="#Monday">Monday</a></nav>
+</header>
+<div class="tip"><strong>iPhone setup:</strong> Open this file in Safari, tap Share, then Add to Home Screen. Checkboxes work without JavaScript.</div>
+
+    <section id="Saturday" class="day">
+      <h2>Saturday</h2>
+      <p class="summary">Rain-friendly Midtown loop: Moynihan → hotel → coffee/lunch → MoMA → hotel → easy dinner.</p>
+      
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">9:45 AM</div>
+            <h3>Arrive: Moynihan Train Hall</h3>
+            <div class="type">Transit</div>
+            <p>Take E train uptown/Queens to 7 Av / 53 St, then walk to Dream Midtown.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Moynihan%20Train%20Hall%2C%20New%20York%2C%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">10:00 AM</div>
+            <h3>Dream Midtown</h3>
+            <div class="type">Hotel</div>
+            <p>Drop luggage. Base camp for the weekend.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Coffee</div>
+            <h3>Birch Coffee / GoGo Jang</h3>
+            <div class="type">Coffee</div>
+            <p>Pick whichever is closest or less crowded.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Birch%20Coffee%20near%20210%20W%2055th%20St%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">11:30 AM</div>
+            <h3>Roxy’s Deli</h3>
+            <div class="type">Lunch</div>
+            <p>Simple Midtown lunch near hotel.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Roxy%27s%20Deli%20834%207th%20Ave%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">1:00 PM</div>
+            <h3>MoMA</h3>
+            <div class="type">Art</div>
+            <p>Greatest-hits only. Budget ~90–120 minutes.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Museum%20of%20Modern%20Art%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">3:00 PM</div>
+            <h3>Hotel check-in + Prosecco Hour</h3>
+            <div class="type">Reset</div>
+            <p>Check in, recharge, and dry out if the weather is rough.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Dinner</div>
+            <h3>Kin Ramen / DIG / Bill’s Bar &amp; Burger</h3>
+            <div class="type">Dinner</div>
+            <p>Keep dinner local. Saturday is a low-friction Midtown loop.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Kin%20Ramen%20near%20Dream%20Midtown%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Night</div>
+            <h3>Times Square / Pizza fallback</h3>
+            <div class="type">Night</div>
+            <p>Swatch Times Square nearby. Late-night $0.99 pizza if needed.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Swatch%20Times%20Square%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+    </section>
+    <section id="Sunday-A-—-Downtown-Flow" class="day">
+      <h2>Sunday A — Downtown Flow</h2>
+      <p class="summary">Recommended downtown sneaker/shopping flow: one subway down, one subway back, then Bad Roman and the show.</p>
+      
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Morning</div>
+            <h3>Bagels or Sarabeth’s</h3>
+            <div class="type">Breakfast</div>
+            <p>Easy start. Don’t over-schedule the morning.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Sarabeth%27s%20Central%20Park%20South%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Midday</div>
+            <h3>E train downtown to Spring St</h3>
+            <div class="type">Transit</div>
+            <p>From 7 Av / 53 St, take the E downtown to Spring St.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Spring%20Street%20Station%20E%20train%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Lunch</div>
+            <h3>Russ &amp; Daughters Café</h3>
+            <div class="type">Lunch</div>
+            <p>Anchor lunch for the downtown plan.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Russ%20%26%20Daughters%20Cafe%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Shopping</div>
+            <h3>Flight Club</h3>
+            <div class="type">Sneakers</div>
+            <p>NoHo sneaker stop.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Flight%20Club%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Shopping</div>
+            <h3>Extra Butter</h3>
+            <div class="type">Sneakers</div>
+            <p>LES sneaker stop. Walk from Flight Club if weather is decent.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Extra%20Butter%20Lower%20East%20Side%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Coffee</div>
+            <h3>Café Integral / Black Fox Coffee</h3>
+            <div class="type">Coffee</div>
+            <p>Pick based on where you are in the loop.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Black%20Fox%20Coffee%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Late Afternoon</div>
+            <h3>Return to Midtown</h3>
+            <div class="type">Transit</div>
+            <p>Take E/F uptown back toward 50th/53rd area.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">5:30 PM</div>
+            <h3>Bad Roman</h3>
+            <div class="type">Dinner</div>
+            <p>Dinner reservation with the family.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Bad%20Roman%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">9:00 PM</div>
+            <h3>Mackenzie performance</h3>
+            <div class="type">Show</div>
+            <p>Main evening event.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">10:30 PM</div>
+            <h3>Carnegie Club / Dutch Fred’s</h3>
+            <div class="type">Nightcap</div>
+            <p>Carnegie Club last seating around 11:15; Dutch Fred’s is easier and lively.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dutch%20Fred%27s%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+    </section>
+    <section id="Sunday-B-—-Upper-West-Side-Alt" class="day">
+      <h2>Sunday B — Upper West Side Alt</h2>
+      <p class="summary">Chill Upper West Side alternate: Grand Bazaar, lunch, coffee, then back to Midtown.</p>
+      
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Morning</div>
+            <h3>B/C train to 72 St</h3>
+            <div class="type">Transit</div>
+            <p>Alternate chill Upper West Side plan. Do not combine with downtown plan.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=72%20St%20Station%20Central%20Park%20West%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">10:00 AM</div>
+            <h3>Grand Bazaar NYC</h3>
+            <div class="type">Market</div>
+            <p>Sundays 10–5 at 100 W 77th St.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Grand%20Bazaar%20NYC%20100%20W%2077th%20St%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Lunch</div>
+            <h3>Daily Provisions / Gray’s Papaya / Covacha</h3>
+            <div class="type">Lunch</div>
+            <p>Pick based on mood: easy sandwiches, cult hot dogs, or elevated Mexican.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Daily%20Provisions%20Upper%20West%20Side%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Shopping</div>
+            <h3>West NYC</h3>
+            <div class="type">Sneakers</div>
+            <p>UWS sneaker option near Columbus/72nd.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=West%20NYC%20Columbus%20Ave%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Coffee</div>
+            <h3>Joe Coffee / Irving Farm</h3>
+            <div class="type">Coffee</div>
+            <p>Easy UWS coffee break before returning.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Joe%20Coffee%20Columbus%20Ave%2068th%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">Afternoon</div>
+            <h3>Return to Midtown</h3>
+            <div class="type">Transit</div>
+            <p>B/C downtown to Columbus Circle / Midtown.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">5:30 PM</div>
+            <h3>Bad Roman</h3>
+            <div class="type">Dinner</div>
+            <p>Dinner reservation with the family.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Bad%20Roman%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">9:00 PM</div>
+            <h3>Mackenzie performance</h3>
+            <div class="type">Show</div>
+            <p>Main evening event.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+    </section>
+    <section id="Monday" class="day">
+      <h2>Monday</h2>
+      <p class="summary">Clean exit day: bagel → bikes → hotel reset → Flatiron/Eataly → Penn.</p>
+      
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">8:30 AM</div>
+            <h3>Broad Nosh Bagels</h3>
+            <div class="type">Breakfast</div>
+            <p>Breakfast near Columbus Circle before bikes.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Broad%20Nosh%20Bagels%20Columbus%20Circle%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">9:15 AM</div>
+            <h3>Unlimited Biking</h3>
+            <div class="type">Bike Rental</div>
+            <p>56 W 56th St. Rent bikes for Central Park.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Unlimited%20Biking%2056%20W%2056th%20St%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">9:30 AM</div>
+            <h3>Central Park bike ride</h3>
+            <div class="type">Activity</div>
+            <p>Casual 60–90 minute ride. Enter near 59th St.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Central%20Park%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">11:00 AM</div>
+            <h3>Hotel reset</h3>
+            <div class="type">Reset</div>
+            <p>Shower, change, pack, store luggage. Check out by noon.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">12:00 PM</div>
+            <h3>R/W train to 23 St</h3>
+            <div class="type">Transit</div>
+            <p>Move south toward Flatiron. Avoid backtracking.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=23%20St%20Station%20Broadway%20Line%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">12:30 PM</div>
+            <h3>Eataly NYC Flatiron</h3>
+            <div class="type">Lunch</div>
+            <p>Lunch and shopping. Swatch Flatiron/Union Square nearby.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Eataly%20NYC%20Flatiron%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">3:30 PM</div>
+            <h3>Retrieve luggage</h3>
+            <div class="type">Hotel</div>
+            <p>Head back to hotel, grab bags, then go to Penn.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Dream%20Midtown%2C%20210%20W%2055th%20St%2C%20New%20York%2C%20NY%2010019">Open in Apple Maps</a>
+          </div>
+        </article>
+        <article class="card">
+          <label class="checkline"><input type="checkbox"><span></span></label>
+          <div class="content">
+            <div class="time">5:27 PM</div>
+            <h3>Depart: Penn Station / Moynihan</h3>
+            <div class="type">Train</div>
+            <p>Amtrak Northeast Regional 193. Grab food to-go before boarding.</p>
+            <a class="mapbtn" href="https://maps.apple.com/?q=Moynihan%20Train%20Hall%20New%20York%20NY">Open in Apple Maps</a>
+          </div>
+        </article>
+    </section>
+</div>
+</body>
+</html>
